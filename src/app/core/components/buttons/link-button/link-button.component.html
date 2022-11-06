@@ -1,0 +1,14 @@
+<a
+    *ngIf="linkType === 'text'"
+    [ngClass]="{
+        'menu-link': linkStyle === 'menu',
+        'underlined-link': linkStyle === 'underlined',
+        'underlined-grey-link': linkStyle === 'underlined-grey'
+    }"
+    [routerLink]="[link]"
+    >{{ label }}</a
+>
+
+<a *ngIf="linkType === 'icon'" class="test" [routerLink]="[link]">
+    <i class="fab fa-{{ icon }}"></i>
+</a>

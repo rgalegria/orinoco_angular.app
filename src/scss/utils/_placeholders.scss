@@ -1,0 +1,37 @@
+/*---------------------------------*/
+/*       _placeholders.scss       */
+/*-------------------------------*/
+
+%typography-title {
+    font-family: $titles;
+    font-weight: $weight-b;
+    line-height: 1.2;
+    color: $primary-title-color;
+    text-transform: uppercase;
+}
+
+%typography-subtitle {
+    font-weight: $weight-l;
+    color: $secondary-title-color;
+}
+
+%typography-text {
+    font-family: $paragraphs;
+    font-weight: $weight-m;
+    color: $primary-paragraph-color;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    margin: 0;
+    padding: 0;
+}
+
+%btn {
+    display: block;
+    width: 100%;
+    font-size: 1.1em;
+    background-color: unset;
+    border: 0;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}

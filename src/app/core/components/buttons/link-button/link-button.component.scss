@@ -1,0 +1,64 @@
+@import '/src/scss/utils/variables';
+
+.menu-link {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    padding: 0.6rem 0;
+
+    &--active {
+        color: $black;
+    }
+}
+
+.underlined-link {
+    background-color: transparent;
+    display: table;
+    font-size: 0.85em;
+    color: $secondary-paragraph-color;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding-bottom: 0.6em;
+    border-bottom: 2px solid $black;
+
+    &:hover {
+        color: $secondary-paragraph-color;
+    }
+
+    &:focus {
+        border-color: $black;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    &__arrow {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 8px solid $black;
+        margin: 1.2em auto 0 auto;
+    }
+}
+
+.underlined-grey-link {
+    background-color: transparent;
+    display: table;
+    font-size: 0.85em;
+    color: $dark-grey;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding-bottom: 0.6em;
+    border-bottom: 2px solid $dark-grey;
+
+    &:hover {
+        color: $dark-grey;
+    }
+
+    &:focus {
+        border-color: $dark-grey;
+        outline: 0;
+        box-shadow: none;
+    }
+}

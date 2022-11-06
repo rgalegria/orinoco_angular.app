@@ -1,0 +1,10 @@
+<button
+    [ngClass]="{
+        'primary-btn': btnType === 'primary',
+        'secondary-btn': btnType === 'secondary',
+        'text-btn': btnType === 'text'
+    }"
+    (click)="handleClick()"
+>
+    <span class="btn__label">{{ label }}</span>
+</button>
